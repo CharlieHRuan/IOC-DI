@@ -1,0 +1,12 @@
+E:\CSharp\ASPNETCore\IOC&DI\IBLL\bin\Debug\netcoreapp3.1\IBLL.deps.json
+E:\CSharp\ASPNETCore\IOC&DI\IBLL\bin\Debug\netcoreapp3.1\IBLL.dll
+E:\CSharp\ASPNETCore\IOC&DI\IBLL\bin\Debug\netcoreapp3.1\IBLL.pdb
+E:\CSharp\ASPNETCore\IOC&DI\IBLL\bin\Debug\netcoreapp3.1\Model.dll
+E:\CSharp\ASPNETCore\IOC&DI\IBLL\bin\Debug\netcoreapp3.1\Model.pdb
+E:\CSharp\ASPNETCore\IOC&DI\IBLL\obj\Debug\netcoreapp3.1\IBLL.csprojAssemblyReference.cache
+E:\CSharp\ASPNETCore\IOC&DI\IBLL\obj\Debug\netcoreapp3.1\IBLL.AssemblyInfoInputs.cache
+E:\CSharp\ASPNETCore\IOC&DI\IBLL\obj\Debug\netcoreapp3.1\IBLL.AssemblyInfo.cs
+E:\CSharp\ASPNETCore\IOC&DI\IBLL\obj\Debug\netcoreapp3.1\IBLL.csproj.CoreCompileInputs.cache
+E:\CSharp\ASPNETCore\IOC&DI\IBLL\obj\Debug\netcoreapp3.1\IBLL.csproj.CopyComplete
+E:\CSharp\ASPNETCore\IOC&DI\IBLL\obj\Debug\netcoreapp3.1\IBLL.dll
+E:\CSharp\ASPNETCore\IOC&DI\IBLL\obj\Debug\netcoreapp3.1\IBLL.pdb

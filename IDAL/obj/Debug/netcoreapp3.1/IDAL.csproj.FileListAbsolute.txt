@@ -1,0 +1,12 @@
+E:\CSharp\ASPNETCore\IOC&DI\IDAL\bin\Debug\netcoreapp3.1\IDAL.deps.json
+E:\CSharp\ASPNETCore\IOC&DI\IDAL\bin\Debug\netcoreapp3.1\IDAL.dll
+E:\CSharp\ASPNETCore\IOC&DI\IDAL\bin\Debug\netcoreapp3.1\IDAL.pdb
+E:\CSharp\ASPNETCore\IOC&DI\IDAL\bin\Debug\netcoreapp3.1\Model.dll
+E:\CSharp\ASPNETCore\IOC&DI\IDAL\bin\Debug\netcoreapp3.1\Model.pdb
+E:\CSharp\ASPNETCore\IOC&DI\IDAL\obj\Debug\netcoreapp3.1\IDAL.csprojAssemblyReference.cache
+E:\CSharp\ASPNETCore\IOC&DI\IDAL\obj\Debug\netcoreapp3.1\IDAL.AssemblyInfoInputs.cache
+E:\CSharp\ASPNETCore\IOC&DI\IDAL\obj\Debug\netcoreapp3.1\IDAL.AssemblyInfo.cs
+E:\CSharp\ASPNETCore\IOC&DI\IDAL\obj\Debug\netcoreapp3.1\IDAL.csproj.CoreCompileInputs.cache
+E:\CSharp\ASPNETCore\IOC&DI\IDAL\obj\Debug\netcoreapp3.1\IDAL.csproj.CopyComplete
+E:\CSharp\ASPNETCore\IOC&DI\IDAL\obj\Debug\netcoreapp3.1\IDAL.dll
+E:\CSharp\ASPNETCore\IOC&DI\IDAL\obj\Debug\netcoreapp3.1\IDAL.pdb
