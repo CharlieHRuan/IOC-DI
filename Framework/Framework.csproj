@@ -5,13 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Castle.Core" Version="4.4.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\IBLL\IBLL.csproj" />
-    <ProjectReference Include="..\IDAL\IDAL.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -15,6 +15,4 @@ E:\CSharp\ASPNETCore\IOC&DI\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
 E:\CSharp\ASPNETCore\IOC&DI\DAL\bin\Debug\netcoreapp3.1\IOCDI.Interface.dll
 E:\CSharp\ASPNETCore\IOC&DI\DAL\bin\Debug\netcoreapp3.1\IOCDI.Interface.pdb
 E:\CSharp\ASPNETCore\IOC&DI\DAL\bin\Debug\netcoreapp3.1\Framework.dll
-E:\CSharp\ASPNETCore\IOC&DI\DAL\bin\Debug\netcoreapp3.1\IBLL.dll
 E:\CSharp\ASPNETCore\IOC&DI\DAL\bin\Debug\netcoreapp3.1\Framework.pdb
-E:\CSharp\ASPNETCore\IOC&DI\DAL\bin\Debug\netcoreapp3.1\IBLL.pdb

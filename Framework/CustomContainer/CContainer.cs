@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Reflection;
+using Framework.CustomAOP;
 
 namespace Framework.CustomContainer
 {
@@ -12,10 +13,34 @@ namespace Framework.CustomContainer
     /// </summary>
     public class CContainer : ICContainer
     {
-        private Dictionary<string, Type> _containerDictionary = new Dictionary<string, Type>();
+        private Dictionary<string, CContainerRegisterModel> _containerDictionary =
+            new Dictionary<string, CContainerRegisterModel>();
+
         private Dictionary<string, object[]> _containerParameterDictionary = new Dictionary<string, object[]>();
 
+        private Dictionary<string, object> _containerScopeDictionary = new Dictionary<string, object>();
+
         private string GetKey(string fullName, string shortName) => $"{fullName}___{shortName}";
+
+        public ICContainer CreateChildContainer()
+        {
+            return new CContainer(this._containerDictionary, this._containerParameterDictionary,
+                new Dictionary<string, object>());
+        }
+
+        public CContainer()
+        {
+        }
+
+        private CContainer(Dictionary<string, CContainerRegisterModel> containerDictionary,
+            Dictionary<string, object[]> containerParameterDictionary,
+            Dictionary<string, object> containerScopeDictionary)
+        {
+            this._containerDictionary = containerDictionary;
+            this._containerParameterDictionary = containerParameterDictionary;
+            this._containerScopeDictionary = containerScopeDictionary;
+        }
+
 
         /// <summary>
         /// 注册
@@ -23,10 +48,19 @@ namespace Framework.CustomContainer
         /// </summary>
         /// <typeparam name="TFrom"></typeparam>
         /// <typeparam name="TTo"></typeparam>
-        public void Register<TFrom, TTo>(string shortName = null, object[] paramList = null) where TTo : TFrom
+        /// <param name="shortName"></param>
+        /// <param name="paramList"></param>
+        /// <param name="lifeTime">生命周期</param>
+        public void Register<TFrom, TTo>(string shortName = null, object[] paramList = null,
+            LifeTime lifeTime = LifeTime.Transient) where TTo : TFrom
         {
             // this._containerDictionary.Add(typeof(TFrom).FullName, typeof(TTo));
-            this._containerDictionary.Add(this.GetKey(typeof(TFrom).FullName, shortName), typeof(TTo));
+            // this._containerDictionary.Add(this.GetKey(typeof(TFrom).FullName, shortName), typeof(TTo));
+            this._containerDictionary.Add(this.GetKey(typeof(TFrom).FullName, shortName), new CContainerRegisterModel()
+            {
+                LifeTime = lifeTime,
+                Type = typeof(TTo)
+            });
             if (paramList != null && paramList.Length > 0)
                 this._containerParameterDictionary.Add(this.GetKey(typeof(TFrom).FullName, shortName), paramList);
         }
@@ -67,11 +101,36 @@ namespace Framework.CustomContainer
             return (TFrom) this.ResolveObject(typeof(TFrom), shortName);
         }
 
+        private object _ITestServiceB = null;
 
         private object ResolveObject(Type originType, string shortName)
         {
             string key = this.GetKey(originType.FullName, shortName);
-            Type type = this._containerDictionary[key];
+            // Type type = this._containerDictionary[key];
+
+            var registerModel = this._containerDictionary[key];
+            Type type = registerModel.Type;
+
+            switch (registerModel.LifeTime)
+            {
+                case LifeTime.Transient:
+                    Console.WriteLine("Transient Do Nothing Before...");
+                    break;
+                case LifeTime.Singleton:
+                    if (registerModel.SingletonInstance == null)
+                        break;
+                    else
+                        return registerModel.SingletonInstance;
+                case LifeTime.Scoped:
+                    if (this._containerScopeDictionary.ContainsKey(key))
+                    {
+                        return this._containerScopeDictionary[key];
+                    }
+
+                    break;
+                default:
+                    break;
+            }
 
             List<object> paramList = new List<object>();
 
@@ -115,6 +174,7 @@ namespace Framework.CustomContainer
                 }
             }
 
+
             object oInstance = Activator.CreateInstance(type, paramList.ToArray());
 
             //所有的构造函数注入完成，在开始执行属性注入
@@ -141,10 +201,28 @@ namespace Framework.CustomContainer
                     var methodParamInstance = this.ResolveObject(methodParamType, methodParamShortName);
                     methodParamList.Add(methodParamInstance);
                 }
+
                 methodInfo.Invoke(oInstance, methodParamList.ToArray());
             }
 
-            return oInstance;
+            switch (registerModel.LifeTime)
+            {
+                case LifeTime.Transient:
+                    Console.WriteLine("Transient Do Nothing After...");
+                    break;
+                case LifeTime.Singleton:
+                    registerModel.SingletonInstance = oInstance;
+                    break;
+                case LifeTime.Scoped:
+                    this._containerScopeDictionary[key] = oInstance;
+                    break;
+                default:
+                    break;
+            }
+
+            //实现AOP
+            return oInstance.AOP(originType);
+            // return oInstance;
         }
 
         private string GetShortName(ICustomAttributeProvider provider)

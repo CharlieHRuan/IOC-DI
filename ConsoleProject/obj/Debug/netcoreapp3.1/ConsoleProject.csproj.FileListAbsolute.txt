@@ -40,3 +40,4 @@ E:\CSharp\ASPNETCore\IOC&DI\ConsoleProject\bin\Debug\netcoreapp3.1\IOCDI.Interfa
 E:\CSharp\ASPNETCore\IOC&DI\ConsoleProject\bin\Debug\netcoreapp3.1\IOCDI.Interface.pdb
 E:\CSharp\ASPNETCore\IOC&DI\ConsoleProject\bin\Debug\netcoreapp3.1\IOCDI.Service.dll
 E:\CSharp\ASPNETCore\IOC&DI\ConsoleProject\bin\Debug\netcoreapp3.1\IOCDI.Service.pdb
+E:\CSharp\ASPNETCore\IOC&DI\ConsoleProject\bin\Debug\netcoreapp3.1\Castle.Core.dll

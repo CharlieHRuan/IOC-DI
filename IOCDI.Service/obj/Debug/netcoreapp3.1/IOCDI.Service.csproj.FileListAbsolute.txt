@@ -11,10 +11,4 @@ E:\CSharp\ASPNETCore\IOC&DI\IOCDI.Service\obj\Debug\netcoreapp3.1\IOCDI.Service.
 E:\CSharp\ASPNETCore\IOC&DI\IOCDI.Service\obj\Debug\netcoreapp3.1\IOCDI.Service.dll
 E:\CSharp\ASPNETCore\IOC&DI\IOCDI.Service\obj\Debug\netcoreapp3.1\IOCDI.Service.pdb
 E:\CSharp\ASPNETCore\IOC&DI\IOCDI.Service\bin\Debug\netcoreapp3.1\Framework.dll
-E:\CSharp\ASPNETCore\IOC&DI\IOCDI.Service\bin\Debug\netcoreapp3.1\IBLL.dll
-E:\CSharp\ASPNETCore\IOC&DI\IOCDI.Service\bin\Debug\netcoreapp3.1\IDAL.dll
-E:\CSharp\ASPNETCore\IOC&DI\IOCDI.Service\bin\Debug\netcoreapp3.1\Model.dll
 E:\CSharp\ASPNETCore\IOC&DI\IOCDI.Service\bin\Debug\netcoreapp3.1\Framework.pdb
-E:\CSharp\ASPNETCore\IOC&DI\IOCDI.Service\bin\Debug\netcoreapp3.1\IBLL.pdb
-E:\CSharp\ASPNETCore\IOC&DI\IOCDI.Service\bin\Debug\netcoreapp3.1\IDAL.pdb
-E:\CSharp\ASPNETCore\IOC&DI\IOCDI.Service\bin\Debug\netcoreapp3.1\Model.pdb

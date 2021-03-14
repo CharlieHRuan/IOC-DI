@@ -52,3 +52,4 @@ E:\CSharp\ASPNETCore\IOC&DI\Client\bin\Debug\net5.0\Framework.dll
 E:\CSharp\ASPNETCore\IOC&DI\Client\bin\Debug\net5.0\IOCDI.Interface.dll
 E:\CSharp\ASPNETCore\IOC&DI\Client\bin\Debug\net5.0\Framework.pdb
 E:\CSharp\ASPNETCore\IOC&DI\Client\bin\Debug\net5.0\IOCDI.Interface.pdb
+E:\CSharp\ASPNETCore\IOC&DI\Client\bin\Debug\net5.0\Castle.Core.dll

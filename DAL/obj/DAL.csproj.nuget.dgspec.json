@@ -101,14 +101,7 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {
-              "E:\\CSharp\\ASPNETCore\\IOC&DI\\IBLL\\IBLL.csproj": {
-                "projectPath": "E:\\CSharp\\ASPNETCore\\IOC&DI\\IBLL\\IBLL.csproj"
-              },
-              "E:\\CSharp\\ASPNETCore\\IOC&DI\\IDAL\\IDAL.csproj": {
-                "projectPath": "E:\\CSharp\\ASPNETCore\\IOC&DI\\IDAL\\IDAL.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -121,6 +114,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            },
             "Microsoft.Extensions.Configuration.FileExtensions": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -130,69 +127,6 @@
               "version": "[5.0.0, )"
             }
           },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\CSharp\\ASPNETCore\\IOC&DI\\IBLL\\IBLL.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\CSharp\\ASPNETCore\\IOC&DI\\IBLL\\IBLL.csproj",
-        "projectName": "IBLL",
-        "projectPath": "E:\\CSharp\\ASPNETCore\\IOC&DI\\IBLL\\IBLL.csproj",
-        "packagesPath": "C:\\Users\\ruanh\\.nuget\\packages\\",
-        "outputPath": "E:\\CSharp\\ASPNETCore\\IOC&DI\\IBLL\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\ruanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://nuget.org/api/v2/": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2/": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {
-              "E:\\CSharp\\ASPNETCore\\IOC&DI\\Model\\Model.csproj": {
-                "projectPath": "E:\\CSharp\\ASPNETCore\\IOC&DI\\Model\\Model.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -303,7 +237,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\CSharp\\ASPNETCore\\IOC&DI\\Framework\\Framework.csproj": {
+                "projectPath": "E:\\CSharp\\ASPNETCore\\IOC&DI\\Framework\\Framework.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -251,14 +251,7 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {
-              "E:\\CSharp\\ASPNETCore\\IOC&DI\\IBLL\\IBLL.csproj": {
-                "projectPath": "E:\\CSharp\\ASPNETCore\\IOC&DI\\IBLL\\IBLL.csproj"
-              },
-              "E:\\CSharp\\ASPNETCore\\IOC&DI\\IDAL\\IDAL.csproj": {
-                "projectPath": "E:\\CSharp\\ASPNETCore\\IOC&DI\\IDAL\\IDAL.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -271,6 +264,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            },
             "Microsoft.Extensions.Configuration.FileExtensions": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -453,7 +450,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\CSharp\\ASPNETCore\\IOC&DI\\Framework\\Framework.csproj": {
+                "projectPath": "E:\\CSharp\\ASPNETCore\\IOC&DI\\Framework\\Framework.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

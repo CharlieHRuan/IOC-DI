@@ -4,6 +4,79 @@
     "E:\\CSharp\\ASPNETCore\\IOC&DI\\IOCDI.Interface\\IOCDI.Interface.csproj": {}
   },
   "projects": {
+    "E:\\CSharp\\ASPNETCore\\IOC&DI\\Framework\\Framework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\CSharp\\ASPNETCore\\IOC&DI\\Framework\\Framework.csproj",
+        "projectName": "Framework",
+        "projectPath": "E:\\CSharp\\ASPNETCore\\IOC&DI\\Framework\\Framework.csproj",
+        "packagesPath": "C:\\Users\\ruanh\\.nuget\\packages\\",
+        "outputPath": "E:\\CSharp\\ASPNETCore\\IOC&DI\\Framework\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ruanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.org/api/v2/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "E:\\CSharp\\ASPNETCore\\IOC&DI\\IOCDI.Interface\\IOCDI.Interface.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -32,7 +105,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\CSharp\\ASPNETCore\\IOC&DI\\Framework\\Framework.csproj": {
+                "projectPath": "E:\\CSharp\\ASPNETCore\\IOC&DI\\Framework\\Framework.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

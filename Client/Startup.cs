@@ -26,9 +26,13 @@ namespace Client
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IUserDal,UserDal>();
-            services.AddTransient<IUserBLL,UserBLL>();
+            // services.AddTransient<IUserDal,UserDal>();
+            // services.AddTransient<IUserBLL,UserBLL>();
             services.AddControllersWithViews();
+
+            services.AddTransient<IUserDal, UserDal>();     //瞬时
+            services.AddSingleton<IUserDal, UserDal>();     //单例
+            services.AddScoped<IUserDal, UserDal>();        //作用域
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +46,7 @@ namespace Client
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
             app.UseStaticFiles();
 
             app.UseRouting();
